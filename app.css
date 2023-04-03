@@ -1,0 +1,55 @@
+.form-container {
+  /* remember to set a width */
+  margin-top: 11em;
+  margin-right: auto;
+  margin-left: auto;
+  height: 30em;
+  width: 40em;
+  background: #e1e2de;
+  text-align: center;
+  border-radius: 5em;
+}
+.form-container label {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.input-container label {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+h1 {
+  padding-top: 50px;
+  font-size: 4rem;
+  color: #ffab42;
+}
+h1 i {
+  color: #0c1e40;
+}
+input[type="text"] {
+  vertical-align: top;
+  display: inline-block;
+  flex-grow: 1;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+}
+.submit-btn {
+}
+h2 {
+  margin-top: 45px;
+  font-weight: 700;
+}
+
+button {
+  height: 40px;
+  border-radius: 18px;
+  margin-left: 11px;
+  border-color: black;
+  width: 100px;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 600;
+}
+button:hover {
+  background-color: #2491ff;
+  transition: background-color 1s ease-out;
+}
