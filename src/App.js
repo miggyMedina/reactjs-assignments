@@ -1,22 +1,20 @@
 import React from 'react';
-import './style.css';
+import './app.css';
 import { useState } from 'react';
 
 export default function App() {
   const [age, setAge] = useState('');
 
-
-
-
-
   const handleSubmit = (e) => {
     const inputAge = e.target.age.value;
     if (inputAge >= 18) {
       setAge(`you are ${inputAge} , the right age `);
-    } else if (inputAge == "") {
+    } else if (inputAge == '') {
       setAge('you did not input anything , please try again');
     } else {
-      setAge(`you are just ${inputAge}, you are underage!`);
+      setAge(
+        `<span style = "color:red" > you are just ${inputAge}, you are underage!</span> `
+      );
     }
     e.preventDefault();
   };
@@ -32,7 +30,7 @@ export default function App() {
           <input type="submit" className="submit-btn" value="check" />
         </form>
       </div>
-      <h2 >{age}</h2>
+      <h2 dangerouslySetInnerHTML={{ __html: age }}></h2>
     </div>
   );
 }
